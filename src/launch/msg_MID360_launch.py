@@ -41,7 +41,8 @@ def generate_launch_description():
         parameters=livox_ros2_params,
         remappings=[
             ("livox/lidar", "livox/lidar_points"),
-            ("livox/imu", "imu_data")
+            ("livox/imu", "imu_data"),
+            ("livox/lidar/pointcloud", "lidar_points")
         ]
     )
 
