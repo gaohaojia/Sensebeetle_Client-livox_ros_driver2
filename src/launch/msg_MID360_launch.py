@@ -40,9 +40,9 @@ def generate_launch_description():
         output='screen',
         parameters=livox_ros2_params,
         remappings=[
-            ("livox/lidar", "livox/lidar_points"),
-            ("livox/imu", "imu_data"),
-            ("livox/lidar/pointcloud", "lidar_points")
+            ("livox/lidar", "livox/lidar_untransformed"),
+            ("livox/lidar/pointcloud", "livox/lidar/pointcloud_untransformed"),
+            ("livox/imu", "livox/imu_untransformed"),
         ]
     )
 
